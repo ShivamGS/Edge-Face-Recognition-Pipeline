@@ -36,3 +36,19 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
                                       │
                                       ▼
                         [SQS Response Queue → IoT Client]
+
+
+## 📂 Project Components
+
+- **Edge Device (Greengrass Core)**: Deployed MTCNN-based face detection as a custom Greengrass component.
+- **Client Simulator (EC2)**: Published base64-encoded image frames via MQTT to simulate IoT camera input.
+- **Cloud Backend (Lambda)**: Performed identity recognition using FaceNet, triggered asynchronously via SQS.
+- **Messaging Layer**: Used SQS for decoupling edge detection from cloud classification and result delivery.
+
+## 🚀 System Workflow
+
+1. **Client device** sends image frames via MQTT to AWS IoT Core.
+2. **Greengrass Core** detects faces using MTCNN and pushes valid detections to an SQS request queue.
+3. **AWS Lambda** is triggered by SQS, performs FaceNet-based recognition, and places results on an SQS response queue.
+4. **Client device** receives the classification output from the response queue.
+
