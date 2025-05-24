@@ -7,7 +7,6 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 
 > 🔐 **Note:** This repository contains only documentation and system architecture.  
 > The source code is withheld in accordance with academic integrity policies.
-> 
 ---
 
 ## 🔧 Project Overview
