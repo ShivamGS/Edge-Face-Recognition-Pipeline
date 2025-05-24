@@ -23,6 +23,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 
 ## 🏗 Architecture
 
+```
 [Client Device (EC2)]
        │
        ├── Publishes video frames via MQTT
@@ -42,7 +43,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 [Response Queue (SQS)]
        │
        └── Returns result to Client Device
-
+```
 ---
 
 ## 📂 Project Components
