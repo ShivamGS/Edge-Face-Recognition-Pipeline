@@ -57,6 +57,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 
 ---
 ##📌 Technical Highlights
+
 🧠 MTCNN-based face detection at the edge – Lightweight, real-time detection on IoT clients using Greengrass components.
 
 ⚡ Cloud-hosted Lambda function with FaceNet – Identity recognition offloaded to the cloud via event-driven architecture.
@@ -69,6 +70,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 
 ---
 ##🔒 Security Measures
+
 🔐 IAM Roles with Least Privilege – Scoped access for Lambda, Greengrass, and SQS operations.
 
 📜 TLS Certificate Authentication – Secure device-level communication through AWS IoT Core.
@@ -80,6 +82,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 ---
 
 ##📝 Summary
+
 This project demonstrates an event-driven, modular architecture for edge-based facial recognition using AWS services. It reflects strong practical experience in:
 
 Edge inference deployment using AWS IoT Greengrass
