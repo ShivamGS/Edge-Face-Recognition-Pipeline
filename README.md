@@ -56,7 +56,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 4. **Client device** receives the classification output from the response queue.
 
 ---
-##📌 Technical Highlights
+## 📌 Technical Highlights
 
 🧠 MTCNN-based face detection at the edge – Lightweight, real-time detection on IoT clients using Greengrass components.
 
@@ -69,7 +69,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 📈 <1s end-to-end latency – Achieved consistently across 100 sample inputs under test conditions.
 
 ---
-##🔒 Security Measures
+## 🔒 Security Measures
 
 🔐 IAM Roles with Least Privilege – Scoped access for Lambda, Greengrass, and SQS operations.
 
@@ -81,7 +81,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 
 ---
 
-##📝 Summary
+## 📝 Summary
 
 This project demonstrates an event-driven, modular architecture for edge-based facial recognition using AWS services. It reflects strong practical experience in:
 
