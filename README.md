@@ -23,23 +23,26 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 
 ## 🏗 Architecture
 
-```text
-[IoT Client Device (EC2)] 
+[Client Device (EC2)]
        │
+       ├── Publishes video frames via MQTT
        ▼
- Publishes MQTT Message
-(topic: clients/<id>-IoTThing)
+[Core Device (Greengrass EC2)]
+       │
+       ├── Performs face detection (MTCNN)
+       ▼
+[Request Queue (SQS)]
+       │
+       ├── Triggers Lambda for recognition
+       ▼
+[Face Recognition (Lambda with FaceNet)]
+       │
+       ├── Sends name result
+       ▼
+[Response Queue (SQS)]
+       │
+       └── Returns result to Client Device
 
-[Greengrass Core (EC2)]
-  ├── Face Detection (MTCNN)
-  └── Sends detected faces to ➤ [SQS Request Queue]
-                                      │
-                                      ▼
-                     [Lambda Function: Face Recognition (FaceNet)]
-                                      │
-                                      ▼
-                        [SQS Response Queue → IoT Client]
-```
 ---
 
 ## 📂 Project Components
