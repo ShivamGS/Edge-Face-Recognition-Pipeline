@@ -37,6 +37,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
                                       ▼
                         [SQS Response Queue → IoT Client]
 
+---
 
 ## 📂 Project Components
 
@@ -44,6 +45,8 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 - **Client Simulator (EC2)**: Published base64-encoded image frames via MQTT to simulate IoT camera input.
 - **Cloud Backend (Lambda)**: Performed identity recognition using FaceNet, triggered asynchronously via SQS.
 - **Messaging Layer**: Used SQS for decoupling edge detection from cloud classification and result delivery.
+
+---
 
 ## 🚀 System Workflow
 
