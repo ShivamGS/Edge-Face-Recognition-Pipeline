@@ -55,3 +55,41 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 3. **AWS Lambda** is triggered by SQS, performs FaceNet-based recognition, and places results on an SQS response queue.
 4. **Client device** receives the classification output from the response queue.
 
+---
+##📌 Technical Highlights
+🧠 MTCNN-based face detection at the edge – Lightweight, real-time detection on IoT clients using Greengrass components.
+
+⚡ Cloud-hosted Lambda function with FaceNet – Identity recognition offloaded to the cloud via event-driven architecture.
+
+🛰️ MQTT-based messaging via AWS IoT Core – Reliable, low-latency device-to-cloud communication using standard IoT protocols.
+
+🔁 SQS for queue-based orchestration – Decouples edge and cloud components with asynchronous message handling.
+
+📈 <1s end-to-end latency – Achieved consistently across 100 sample inputs under test conditions.
+
+---
+##🔒 Security Measures
+🔐 IAM Roles with Least Privilege – Scoped access for Lambda, Greengrass, and SQS operations.
+
+📜 TLS Certificate Authentication – Secure device-level communication through AWS IoT Core.
+
+🧪 Input Validation – Enforced rules for file types, queue/topic names, and payload structure.
+
+🌍 Region-Scoped Resources – All services confined to a single AWS region to optimize latency and cost.
+
+---
+
+##📝 Summary
+This project demonstrates an event-driven, modular architecture for edge-based facial recognition using AWS services. It reflects strong practical experience in:
+
+Edge inference deployment using AWS IoT Greengrass
+
+Serverless ML integration with AWS Lambda and FaceNet
+
+MQTT-based IoT messaging
+
+Asynchronous task management with SQS
+
+Cloud-IoT pipeline design for real-world, low-latency systems
+
+
