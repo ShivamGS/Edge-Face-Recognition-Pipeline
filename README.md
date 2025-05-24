@@ -86,16 +86,16 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
 
 ## 📝 Summary
 
-This project demonstrates an event-driven, modular architecture for edge-based facial recognition using AWS services. It reflects strong practical experience in:
+- This project demonstrates an event-driven, modular architecture for edge-based facial recognition using AWS services. It reflects strong practical experience in:
 
-Edge inference deployment using AWS IoT Greengrass
+- Edge inference deployment using AWS IoT Greengrass
 
-Serverless ML integration with AWS Lambda and FaceNet
+- Serverless ML integration with AWS Lambda and FaceNet
 
-MQTT-based IoT messaging
+- MQTT-based IoT messaging
 
-Asynchronous task management with SQS
+- Asynchronous task management with SQS
 
-Cloud-IoT pipeline design for real-world, low-latency systems
+- Cloud-IoT pipeline design for real-world, low-latency systems
 
 
