@@ -36,7 +36,7 @@ Designed as a prototype for **smart surveillance and IoT use cases**, the projec
                                       │
                                       ▼
                         [SQS Response Queue → IoT Client]
-
+```
 ---
 
 ## 📂 Project Components
